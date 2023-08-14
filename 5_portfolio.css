@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background: url("https://www.clydedigital.co.uk/wp-content/uploads/2019/07/white-bg-photography-1.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: absolute;
+    font-family: sans-serif;
+}
+.navabar{
+    width: 86%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.navabar .logo{
+    width: 160px;
+    cursor: pointer;
+    margin-left: -2%;
+    margin-top: -0.5%;
+    border-radius: 200px;
+}
+ul{
+   margin-top: 0%;
+}
+ul li{
+    list-style: none;
+    padding: 10px 16px;
+    display: inline-block;
+}
+ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: darkslategray;
+    margin-top: -3%;
+    transition: 2s ease;
+}
+ul li a:hover{
+    color: rgb(219, 82, 32);
+}
+.info{
+    margin-left: 7%;
+    margin-top: 6%;
+}
+.info h1{
+   
+
+    padding-top: 5px;
+    font-size: 65px;
+    padding-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(40, 39, 39);
+}
+.info h3{
+    padding-top: 23px;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+.info span{
+    color: rgba(157, 0, 255, 0.658);
+}
+.info a{
+    text-decoration: none;
+    margin: 26px 0;
+    
+    padding: 10px 18px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    display: inline-block;
+    transition: 2s ease;
+}
+.info a:hover{
+    background-color: rgba(21, 175, 226, 0.888);
+}
+.image{
+    width: 30%;
+    height: 60%;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+}
+.image img{
+    position: absolute;
+    height: 140%;
+    left: 40%;
+    transform: translate(-55%);
+    bottom: 0;
+    transition-property: left;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+}
+.image :hover .girl{
+    left:55%
+}
+.icons {
+    margin-left: 101px;
+    
+}
+.icons a{
+    margin: 5px;
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+}
+.tw :hover{
+    color: rgba(8, 157, 206, 0.858);
+}
+
+.fb:hover{
+    color: rgba(71, 100, 248, 0.858);
+    
+}
+.ig:hover{
+    color: rgba(237, 12, 143, 0.858);
+    
+}
