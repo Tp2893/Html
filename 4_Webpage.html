@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A straight slice of heaven | www.PizzaInn.com</title>
+    <link rel="stylesheet" href="27.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+        }
+
+        #logo {
+            margin: 1px;
+        }
+
+        #logo img {
+
+            height: 80px;
+        }
+
+        #navbar ul {
+            display: flex;
+        }
+
+        #navbar {
+            background-color: black;
+            position: relative;
+        }
+
+        #navbar::before {
+            content: "";
+            position: absolute;
+            background-color: rgb(0, 0, 0);
+            height: 98.9%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.1;
+            top: 0;
+            left: 0;
+
+        }
+
+        #navbar li {
+            font-family: 'IBM Plex Sans', sans-serif;
+            list-style: none;
+            font-size: 1.3rem;
+
+        }
+
+
+        #navbar li a {
+            display: block;
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+
+        }
+
+        #navbar li a:hover {
+            color: rgb(233, 140, 0);
+            background-color: rgb(255, 255, 255);
+        }
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            margin-top: 100px;
+            height: 550px;
+
+
+        }
+
+        #home::before {
+            content: "";
+            background-image: url('https://jooinn.com/images/wood-background-1.jpg');
+            background-color: black;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            opacity: 1;
+        }
+
+        #home h3 {
+            color: rgb(255, 161, 10);
+            padding-left: 320px;
+            font-size: 1.8rem;
+            font-weight: 1000;
+            font-family: cursive;
+            font-weight: lighter;
+        }
+
+        #home img {
+            margin-top: -24%;
+            margin-left: 47%;
+            width: 52%;
+            height: 120%;
+        }
+
+        #home h1 {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 4rem;
+            color: rgb(255, 255, 255);
+            padding: 20px;
+        }
+
+        #home p {
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            font-size: 2rem;
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+
+        #services {
+
+            display: flex;
+        }
+
+        #services .box {
+
+            padding: 34px;
+
+            border-radius: 23px;
+            background-color: rgb(255, 250, 245);
+        }
+
+        #services .box img {
+            height: 200px;
+            padding: 5px 5px;
+            display: block;
+            margin: auto;
+        }
+
+        #services .box p {
+            font-family: cursive;
+        }
+
+        .bt1:hover {
+            background-color: chartreuse;
+        }
+
+        #clients {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #client-section {
+            height: 345px;
+            padding-bottom: 19px;
+        }
+
+        #client-section::before {
+            content: " ";
+            position: absolute;
+            background: url('https://tse4.mm.bing.net/th?id=OIP.HO6-1EB4o2fKn4IugJnxzQHaEK&pid=Api&P=0&h=180');
+            width: 100vw;
+            height: 50%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        #contact {
+            position: relative;
+            height: 500px;
+
+        }
+
+        #contact::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.searchenginejournal.com/wp-content/uploads/2018/06/best-contact-us-pages.png') no-repeat center;
+            z-index: -1;
+            opacity: 0.9;
+        }
+
+        footer {
+            background-color: rgb(35, 34, 34);
+            color: white;
+            padding: 10px;
+        }
+
+        #contact-box input,
+        #contact-box textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 10px;
+            font-size: 1.1rem;
+        }
+
+        #contact-box {
+            display: flex;
+
+            padding-bottom: 34px;
+        }
+
+        #contact-box form {
+            width: 40%;
+        }
+
+        #contact-box label {
+            font-size: 1.3rem;
+            font-family: cursive;
+        }
+
+        .form-group {
+            padding-top: 5px;
+            padding-left: 20px;
+        }
+
+        /* UTILITY CLASSES */
+
+        .bt1 {
+            background-color: rgb(28, 179, 28);
+            border-radius: 23px;
+            padding: 5px 10px;
+            margin: 10px 15px;
+            font-family: 'IBM Plex Sans', sans-serif;
+            list-style: none;
+            font-size: 1rem;
+            cursor: pointer;
+            box-shadow: 2px 2px 2px;
+        }
+
+        .h-primary {
+            font-size: 4em;
+            padding: 12px;
+
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+
+        .h-secondary {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 2.3rem;
+            padding: 12px;
+        }
+
+        .btn {
+            padding: 6px 20px;
+            border: 2px solid white;
+            background-color: brown;
+            color: white;
+            margin: 17px;
+            font-size: 1.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        span {
+            color: rgb(255, 122, 6);
+
+        }
+
+        h2 {
+            color: rgb(255, 255, 255);
+
+            background-image: url('https://tse2.mm.bing.net/th?id=OIP.AeRie631h-KbwEEBLguvwQHaF1&pid=Api&P=0&h=180');
+            font-size: 4em;
+
+
+            font-family: 'IBM Plex Sans', sans-serif;
+            text-align: center;
+        }
+
+        #b1 {
+            width: 140px;
+            background-color: rgb(255, 155, 72);
+            border-radius: 23px;
+            padding: 10px 10px;
+            margin: 10px 15px;
+            font-family: 'IBM Plex Sans', sans-serif;
+            list-style: none;
+            font-size: 1rem;
+            cursor: pointer;
+            box-shadow: 2px 2px 2px;
+        }
+
+        #b2 {
+            width: 140px;
+            background-color: rgb(245, 238, 234);
+            border-radius: 23px;
+            padding: 10px 10px;
+            margin: -54px 175px;
+            font-family: 'IBM Plex Sans', sans-serif;
+            list-style: none;
+            font-size: 1rem;
+            cursor: pointer;
+            box-shadow: 2px 2px 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.0GJscsdFpPqSO7YgUJetIAHaHa&pid=Api&P=0&h=180">
+        </div>
+        <ul>
+            <li class="item"><a href="#">HOME</a></li>
+            <li class="item"><a href="#">MENU</a></li>
+            <li class="item"><a href="#">BLOG</a></li>
+            <li class="item"><a href="#">RESERVATION</a></li>
+            <li class="item"><a href="#">PAGES</a></li>
+            <li class="item"><a href="#">ABOUT US</a></li>
+            <button class="bt1">ORDER ONLINE</button>
+            <button class="bt1">CALL +91 7201088965</button>
+        </ul>
+    </nav>
+    <section id="home">
+        <h3>Delicous</h3>
+        <h1>ITALIAN CUIZINE</h1>
+        <p>The Best Place To Satisfy Your Tummy.
+        </P>
+        <button id="b1">Order Now</button>
+        <button id="b2">View Menu</button>
+        <img src="https://images.genius.com/7fecb4717aa9020b21392573e051b236.683x455x10.gif" alt="">
+    </section>
+    <section class="services-containeer">
+
+        <h2>FAVOURITES</h2>
+
+        <div id="services">
+            <div class="box">
+                <img src="https://cdn.sodelicious.recipes/wp-content/uploads/2017/10/3f52e-10.02.2017-r1-ns-var01-spaghetti-pizza-with-goat-cheese.jpg"
+                    alt="">
+                <img src=https://tse4.mm.bing.net/th?id=OIP.pqjzggqZshzFi5x4d0rByQHaE8&pid=Api&P=0&h=180" alt="">
+
+            </div>
+            <div class="box">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.L9U4zwFJ_NF402woV5kKaAHaE7&pid=Api&P=0&h=180" alt="">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.DEhhpr-zT40vJQB6lKOILgAAAA&pid=Api&P=0&h=180" alt="">
+            </div>
+            <div class="box">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.e93pvPQlNv_kBIIJP_3ehQHaFL&pid=Api&P=0&h=180" alt="">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.vLKFzsLUjelrGbUsVDDyWgHaEo&pid=Api&P=0&h=180" alt="">
+
+
+            </div>
+            <div class="box">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.UcH4593DztRcjYnnUS75WQHaE8&pid=Api&P=0&h=180" alt="">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.8RJptF5WHZYS6JYr9jXS1QHaFH&pid=Api&P=0&h=180" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Online Partners</h1>
+        <div id="clients">
+            <div class="class-item">
+
+                <img src="" alt="">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.55pfUis7rmnNDBA7eHYy5gHaEK&pid=Api&P=0&h=180" alt="">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.UNnKTxnNgFgAozCpJcwtJgHaEK&pid=Api&P=0&h=180" alt="">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.PuE34iMbJF_3_I1Yd1siIwHaC9&pid=Api&P=0&h=180" alt="">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.f2OGMX8fcR3D9kzs3YVP5AHaE8&pid=Api&P=0&h=180" alt="">
+            </div>
+
+
+        </div>
+
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone no:</label>
+                    <input type="phone" name="phone" id="phone" placeholder="Enter your phone no">
+                </div>
+                <div class="form-group">
+                    <label for="name">Message:</label>
+                    <textarea name="message" id="message" cols="30" rows="4"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            copyright &copy; www.PizzaInn.com. All rights reserved!
+
+        </div>
+    </footer>
+</body>
+
+</html>

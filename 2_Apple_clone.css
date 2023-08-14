@@ -1,0 +1,330 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar {
+    justify-content: space-evenly;
+    display: flex;
+    height: 48px;
+
+    align-items: center;
+    background-color: rgb(69, 67, 67);
+}
+
+img {
+    display: flex;
+    height: 25px;
+    width: 30px;
+}
+
+.navbar a {
+    font-size: 0.9rem;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgba(255, 255, 255, .8);
+
+    text-decoration: none;
+}
+
+.icon {
+    color: rgba(255, 255, 255, .8);
+    cursor: pointer;
+}
+
+.cart {
+    cursor: pointer;
+
+    color: rgba(255, 255, 255, .8);
+}
+
+.mininav {
+    justify-content: space-evenly;
+    display: flex;
+    height: 48px;
+    color: rgb(49, 49, 49);
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.mininav h2 {
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.mininav a {
+    text-decoration: none;
+}
+
+.box1 i {
+    color: rgb(36, 92, 246);
+}
+.box2 i {
+    color: rgb(36, 92, 246);
+}
+.box5 i {
+    color: rgb(36, 92, 246);
+}
+.box11 i{
+    
+   padding-top: 2%;
+    padding-left: 0.6%;
+    padding-right: 2%; color: rgb(36, 92, 246);
+}
+.box12 i{
+    
+   padding-top: 2%;
+    padding-left: 0.6%;
+    padding-right: 2%; color: rgb(36, 92, 246);
+}
+.box13 i{
+    
+   padding-top: 2%;
+    padding-left: 0.6%;
+    padding-right: 2%; color: rgb(36, 92, 246);
+}
+.box14 i{
+    
+   padding-top: 2%;
+    padding-left: 0.6%;
+    padding-right: 2%; color: rgb(36, 92, 246);
+}
+.box11 a{
+    text-decoration: none;
+}
+.box13 a{
+    text-decoration: none;
+}
+.box14 a{
+    text-decoration: none;
+}
+.q a {
+
+    text-decoration: none;
+}
+
+.box1 {
+    text-align: center;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.q h1{
+    font-size: 4rem;
+    padding: 20px;
+}
+.q p{
+    font-size: 2rem;
+}
+.box2{
+        text-align: center;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        color: white;
+        background-color: rgb(0, 0, 0);
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+        
+    }
+    .box2 i{
+        padding-left: 0.6%;
+        padding-right: 2%;
+    }
+    .box2 a{
+        text-decoration: none;
+        font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+        color: rgb(36, 92, 246);
+    font-size: 1.5rem;
+}
+.iphone img{
+    background-color: rgb(0, 0, 0);
+   padding-top: 1%;
+    height: 450px;
+    width: 100vw;
+}
+.box4{
+    text-align: center;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 160px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-ser
+}
+.q h1{
+    font-weight: 600;
+    font-size: 3.5rem;
+    padding: 20px;
+}
+.q p{
+    font-size: 2rem;
+}
+.box5{
+    text-align: center;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    
+}
+.box5 i{
+    padding-left: 0.6%;
+    padding-right: 2%;
+}
+.box5 a{
+    text-decoration: none;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    color: rgb(36, 92, 246);
+font-size: 1.5rem;
+}
+.iphone14 img{
+    background-color: rgb(0, 0, 0);
+  
+    height: 450px;
+    width: 100vw;
+}
+.containeer{
+display: flex;
+}
+.box11{
+
+    text-align: center;
+    height: 700px;
+    width: 50%;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    
+}
+.box11 h1{
+    padding-top: 11%;
+    font-size: 3rem;
+}
+.box11 p{
+    padding-top: 1%;
+    font-size: 2rem;
+}
+
+.bitmoji
+{
+    display: flex;
+}
+.bitmoji img{
+    padding-top: 2%;
+    height: 500px;
+    width: 500px;
+}
+.box12{
+    text-align: center;
+    height: 700px;
+    width: 50%;
+   
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    background-color: aliceblue;
+}
+.box12 h1{
+    padding-top: 11%;
+    font-size: 3rem;
+}
+.box12 p{
+    padding-top: 1%;
+    font-size: 2rem;
+}
+.macbook{
+
+    display: flex;
+}
+.box12 img{
+    padding-left: 10px;
+    padding-top: 5%;
+    height: 400px;
+    width: 400px;
+}
+.containeer1{
+    display: flex;
+}
+.box13{
+   margin-top: 1%;
+    height: 700px;
+    width: 49%;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    text-align: center;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+.box13 h1{
+    
+    font-size:2.6rem;
+}
+.box13 h4{
+    padding: 1%;
+color: red;
+font-weight: 100;
+}
+.box13 h2{
+    font-weight: 100;
+}
+.flex{
+    padding-top: 10%;
+    padding-left: 38%;
+    display: flex;
+    align-items: center;
+    
+}
+.flex img{
+    height: 40px;
+    width: 50px;
+}
+.flex1{
+    padding-top: 10%;
+    padding-left: 36%;
+    display: flex;
+    align-items: center;
+    
+}
+.flex1 img{
+    height: 40px;
+    width: 50px;
+}
+.watch img{
+    padding-top: 2.5%;
+   padding-left: 25%;
+    height: 450px;
+    width: 450px;
+}
+.box14{
+ margin-top: 1%;
+ margin-left: 1%;
+    height: 700px;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    text-align: center;
+    width: 50%;
+    background-color: rgb(240, 240, 241);
+}
+.box14 h1{
+    font-size:2.6rem; 
+}
+.box14 h2{
+    font-weight: 100;
+}
+.iphon img{
+    
+    padding-top: 5%;
+    height: 400px;
+    width: 842.3px;
+}
+.iphon{
+    display: flex;
+}
